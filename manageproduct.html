@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/760c9b9ca3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="header">
+        <img src="./images/Daraz-Logo.png" alt="" id="logo">
+        
+            <div>
+                <ul id="nav">
+                    <li><a href="admin.html">Admin</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html"><i class="fa-sharp fa-solid fa-bag-shopping" id="no"></i></a></li>
+                    <i class="fa-sharp fa-regular fa-circle-xmark" id="close"></i>
+                </ul>
+            </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-sharp fa-solid fa-bag-shopping"></i></a>
+            <i class="fa-solid fa-bars showhide" id="bar"></i>
+        </div>
+        
+    </section>
+    
+    <section id="manage-product">
+        <div class="product-input">
+            <label for="product-brand">Enter Product Brand Name</label>
+            <input type="text" name="" id="product-brand">
+        </div>
+        <div class="product-input">
+            <label for="product-name">Enter Product Name</label>
+            <input type="text" name="" id="product-name">
+        </div>
+        <div class="product-input">
+            <label for="product-price">Enter Product Price</label>
+            <input type="" name="" id="product-price">
+        </div>
+        <div class="product-input">
+            <button id="selectbtn" onclick="uploadimg()">Select Image</button>
+            <input type="file" name="" id="file" style="display: none;">
+            <div class="img-box">
+                <img src="" id="loadimg" alt="" width="100%" height="100%" style="display: none;">
+            </div>
+        </div>
+        <button id="addbtn" onclick="addproduct()">Add Product</button>
+    </section>
+<div id="root">
+
+</div>
+    <section id="newslatter">
+        <div class="newstext">
+            <h1>Sign Up For Newslatters</h1>
+            <h4>Get E-mail updates about our latest shop and <span> special offers.</span></h4>
+        </div>
+        <div class="input">
+            <input type="text" name="" id="email" placeholder="Your Email Address">
+            <button>Sing Up</button>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="contact">
+            <img src="./images/Daraz-Logo.png" alt="">
+            <h1>Contact</h1>
+            <p><span>Address :</span> 562 Willington Road Street 32 Sonfrancisco</p>
+            <p><span>Phone :</span> +23000112233 , +048123456</p>
+            <p><span>Hours :</span> 10:00 - 18:00 Mon - Sat</p>
+            <h3>Follow Us</h3>
+            <div class="social">
+                <i class="fa-brands fa-facebook hand"></i>
+                <i class="fa-brands fa-square-instagram hand"></i>
+                <i class="fa-brands fa-twitter hand"></i>
+                <i class="fa-brands fa-skype hand"></i>
+                <i class="fa-solid fa-envelope hand"></i>
+            </div>
+        </div>
+
+        <div class="contact">
+            <h1>About</h1>
+            <p> About Us</p>
+            <p>Delivery Information</p>
+            <p>Privacy Policy</p>
+            <p>Terms & Conditions</p>
+            <p>Contact Us</p>
+            
+        </div>
+
+        <div class="contact">
+            <h1>My Account</h1>
+            <p>Sing In</p>
+            <p>View Cart</p>
+            <p>My Wishlist</p>
+            <p>Track My Order</p>
+            <p>Help</p>
+
+        </div>
+
+        <div class="contact">
+            <h1>Install App</h1>
+            <p>From App Store or Google Play</p>
+            <div class="stores">
+
+                <div class="appstore">
+                    <i class="fa-brands fa-apple pos"></i>
+                    <p>Download on the</p>
+                    <span>App Store</span>
+                </div>          
+                <div class="appstore">
+                    <i class="fa-brands fa-google-play pos"></i>
+                    <p>Download on the</p>
+                    <span>Google Play</span>
+                </div>
+            </div>
+            <p>Secured Payment Gateways</p>
+            <div class="paymentcard">
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-solid fa-credit-card"></i>
+            </div>
+        </div>
+
+    </section>
+    <script src="indes.js"></script>
+    <!-- <script src="./adminlogin.js"></script> -->
+    <script src="./manageproduct.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <input type="file" id="file" style='display:none';>
+        <button id="btn">Show</button>
+
+        <script>
+            let button=document.getElementById('btn');
+            button.addEventListener('click',()=>{
+                file.onchange=()=>{
+                    let img=document.createElement('img');
+                    img.setAttribute('width','100px');
+                    img.height='200';
+                    document.body.appendChild(img);
+                    let reader=new FileReader();
+                    reader.readAsDataURL(file.files[0]);
+                    reader.onload=()=>{
+                            img.src=reader.result;
+
+                }
+                };
+                document.getElementById('file').click();
+            });
+        </script>
+
+    <!-- <script>
+        let button=document.getElementById('show');
+        let file=document.getElementById('file');
+        button.addEventListener('click',()=>{
+            let reader=new FileReader();
+            reader.readAsDataURL(file.files[0]);
+            reader.onload =()=>{
+                document.getElementById('pic').src=reader.result;
+            }
+            
+        });
+
+
+
+    </script> -->
+</body>
+</html>
